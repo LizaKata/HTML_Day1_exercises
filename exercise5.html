@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        padding: 5px;
+      }
+
+      .button-padding {
+        padding-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+
+    <form>
+      <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" /><br />
+      </div>
+      <div>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" /><br />
+      </div>
+      <div>
+        <label for="course">Course:</label>
+        <select name="languages" id="course">
+          <option value="JavaScript">JavaScript</option>
+          <option value="html">HTML</option>
+        </select>
+      </div>
+      <div>
+        <label for="course">Gender:</label><br />
+        <input type="radio" name="gender" value="male" checked /> Male<br />
+        <input type="radio" name="gender" value="female" /> Female<br />
+      </div>
+      <div>
+        <label for="hobbies">Hobbies:</label><br />
+        <input
+          type="checkbox"
+          id="hobbies"
+          name="programming"
+          size="4"
+          multiple
+        />
+        Programming <br />
+        <input
+          type="checkbox"
+          id="hobbies"
+          name="basketball"
+          size="4"
+          multiple
+        />
+        Basketball <br />
+        <input type="checkbox" id="hobbies" name="football" size="4" multiple />
+        Football <br />
+        <input type="checkbox" id="hobbies" name="reading" size="4" multiple />
+        Reading Novel <br />
+      </div>
+      <div>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" />
+      </div>
+      <div>
+        <label for="address">Address:</label><br />
+        <textarea id="address" name="address" rows="5" cols="50"></textarea>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+      </div>
+      <div class="button-padding">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
